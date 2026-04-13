@@ -1,0 +1,12 @@
+dependencies:
+    glfw, glfw-devel
+
+    glfw is the compiled binary, whereas glfw-devel has the header files.
+    for some f*cking reason fedora's glfw package doesn't come with the header
+    files, so you need glfw-devel as well. Also want to create a soname link
+    to the glfw binary. Arch Linux's package doesn't have this problem though,
+    the header files and soname all come with the glfw package there.
+
+    glad library? apparently this is needed to hook up the opengl library 
+    functions to our specific driver functions?
+      
